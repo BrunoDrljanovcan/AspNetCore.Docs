@@ -13,6 +13,7 @@ namespace FileUploadSample.Filters
             var factories = context.ValueProviderFactories;
             factories.RemoveType<FormValueProviderFactory>();
             factories.RemoveType<JQueryFormValueProviderFactory>();
+			factories.RemoveType<FormFileValueProviderFactory>();
         }
 
         public void OnResourceExecuted(ResourceExecutedContext context)
